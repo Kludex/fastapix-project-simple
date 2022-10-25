@@ -4,7 +4,7 @@ USERS_URL = "/api/v1/users"
 
 
 def test_get_users(client: TestClient) -> None:
-    response = client.get(USERS_URL)
+    response = client.get(f"{USERS_URL}/")
     assert response.status_code == 200
     assert response.json() == [{"name": "Alice"}, {"name": "Bob"}]
 
@@ -16,7 +16,7 @@ def test_get_user(client: TestClient) -> None:
 
 
 def test_create_user(client: TestClient) -> None:
-    response = client.post(USERS_URL)
+    response = client.post(f"{USERS_URL}/")
     assert response.status_code == 200
     assert response.json() == {"name": "Alice"}
 

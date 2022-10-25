@@ -1,3 +1,5 @@
+from typing import Any
+
 from fastapi import FastAPI
 
 from app.api import router as api_router
@@ -7,5 +9,5 @@ app.include_router(api_router)
 
 
 @app.get("/health", include_in_schema=False)
-def home():
+def home() -> Any:
     ...

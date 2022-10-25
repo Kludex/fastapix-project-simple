@@ -11,7 +11,7 @@ class Base:
 
     @declared_attr
     def __tablename__(cls) -> str:
-        return humps.depascalize(cls.__name__)
+        return humps.depascalize(cls.__name__)  # type: ignore[no-any-return]
 
     def dict(self) -> dict[str, Any]:
         return {c.key: getattr(self, c.key) for c in inspect(self).mapper.column_attrs}
