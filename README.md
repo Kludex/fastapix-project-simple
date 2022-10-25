@@ -34,7 +34,7 @@ project/
 ├── tests/
 │   ├── __init__.py
 |   ├── conftest.py
-│   └── test_items.py
+│   └── test_users.py
 ├── .gitignore
 ├── .pre-commit-config.yaml
 ├── .pyproject.toml
