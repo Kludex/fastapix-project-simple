@@ -16,3 +16,4 @@ pyproject-flake8
 isort
 black
 mypy
+watchfiles

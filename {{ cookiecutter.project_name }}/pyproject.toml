@@ -24,5 +24,6 @@ filterwarnings = ["error"]
 source_pkgs = ["app", "tests"]
 
 [tool.coverage.report]
+fail_under = 100
 show_missing = true
 skip_covered = true

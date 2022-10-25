@@ -42,6 +42,7 @@ project/
 ├── tests/
 │   ├── __init__.py
 |   ├── conftest.py
+|   ├── test_main.py
 │   └── test_users.py
 ├── .gitignore
 ├── .pre-commit-config.yaml
