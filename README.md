@@ -4,6 +4,14 @@ This is part of a series of templates I'm working on.
 
 I'm working on a **composable template system** for FastAPI projects.
 
+## Usage
+
+You'll need to install [`cookiecutter`](https://pypi.org/project/cookiecutter/), and then:
+
+```bash
+cookiecutter https://github.com/fastapi-packages/fastapix-project-simple
+```
+
 ## Project Structure
 
 ```

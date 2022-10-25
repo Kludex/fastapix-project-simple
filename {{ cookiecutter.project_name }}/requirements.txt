@@ -3,10 +3,11 @@ fastapi
 uvicorn
 uvloop; sys_platform == "linux"
 httptools
+sqlalchemy
 pyhumps
 
 # Tests
-httpx
+requests
 pytest
 
 # Development
