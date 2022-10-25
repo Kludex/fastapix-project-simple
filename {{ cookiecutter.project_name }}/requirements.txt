@@ -9,6 +9,7 @@ pyhumps
 # Tests
 requests
 pytest
+pytest-sugar
 
 # Development
 flake8

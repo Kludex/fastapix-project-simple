@@ -1,4 +1,3 @@
-import asyncio
 from typing import Iterator
 
 import pytest
@@ -13,18 +12,8 @@ from app.main import app
 from app.models.base import Base
 
 engine = create_engine(
-    "sqlite://",
-    connect_args={"check_same_thread": False},
-    poolclass=StaticPool,
+    "sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool
 )
-
-
-@pytest.fixture(scope="session", autouse=True)
-def event_loop() -> Iterator[asyncio.AbstractEventLoop]:
-    """Reference: https://github.com/pytest-dev/pytest-asyncio/issues/38#issuecomment-264418154"""
-    loop = asyncio.get_event_loop_policy().new_event_loop()
-    yield loop
-    loop.close()
 
 
 @pytest.fixture(scope="session", autouse=True)
