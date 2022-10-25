@@ -12,6 +12,7 @@ pytest
 
 # Development
 flake8
+pyproject-flake8
 isort
 black
 mypy
