@@ -32,7 +32,14 @@ This is a project generated from [fastapix-project-simple](https://github.com/fa
 ├── tests/
 │   ├── __init__.py
 |   ├── conftest.py
-│   └── test_users.py
+|   ├── test_main.py
+│   └── users/
+│       ├── __init__.py
+|       ├── conftest.py
+│       ├── test_get_users.py
+│       ├── test_get_user.py
+│       ├── test_create_user.py
+│       └── test_update_user.py
 ├── .gitignore
 ├── .pre-commit-config.yaml
 ├── pyproject.toml
