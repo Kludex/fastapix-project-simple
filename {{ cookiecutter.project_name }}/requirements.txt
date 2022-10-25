@@ -1,1 +1,16 @@
+# Production
 fastapi
+uvicorn
+uvloop; sys_platform == "linux"
+httptools
+pyhumps
+
+# Tests
+httpx
+pytest
+
+# Development
+flake8
+isort
+black
+mypy

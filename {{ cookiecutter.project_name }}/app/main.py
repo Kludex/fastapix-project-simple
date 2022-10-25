@@ -3,6 +3,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/health", include_in_schema=False)
 def home():
-    return {"Hello": "World"}
+    ...
